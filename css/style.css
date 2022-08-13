@@ -1,0 +1,100 @@
+body{
+    background-color: #1d1d1d;
+}
+
+.navbar{
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+li{
+    list-style: none;
+    color: wheat;
+}
+
+a{
+    text-decoration: none;
+    color: wheat;
+}
+a:hover{
+    color: rgb(203, 172, 113);
+}
+
+h1{
+    color: wheat;
+}
+
+#game{
+    height: 85vh;
+    display: flex;
+    align-items: flex-end;
+}
+#perso{
+    width: 30px;
+    position: absolute;
+    top: 177px;
+    left: 2%;
+    
+}
+.rectangles{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 90vw;
+}
+.rectangle{
+    width: 12vw;
+    height: 70vh;
+    justify-content: space-around;
+
+}
+#rectangle1{
+    background-color: rgb(203, 172, 113);
+    border: 1px solid black;
+}
+
+#rectangle2{
+    height: 50vh;
+    background-color: none;
+    border: 1px dotted black;
+}
+
+#rectangle3{
+    height: 30vh;
+    background-color: none;
+    border: 1px dotted black;
+}
+
+#rectangle4{
+    height: 15vh;
+    background-color: none;
+    border: 1px dotted black;
+}
+
+
+#rectangle5{
+    height: 5vh;
+    background-color: none;
+    border: 1px dotted black;
+}
+
+
+#rectangle6{
+    height: 2vh;
+    background-color: none;
+    border: 1px dotted black;
+}
+
+hr{
+    height: 7vh;
+    width: 2px;
+    border: none;
+    background-color: wheat;
+    position: absolute;
+    bottom: 5px;
+    left: 95%;
+}
