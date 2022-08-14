@@ -7,13 +7,9 @@ const rectangle6 = document.getElementById('rectangle6');
 const rectangles = [rectangle2, rectangle3, rectangle4, rectangle5, rectangle6];
 
 const perso = document.getElementById('perso');
-// detect if the mouse is over the rectangle2 is on and console log it
-// if (rectangle2.addEventListener('mouseover', rectangle2on)) {
-    //     console.log('rectangle2 is on');
-    // }elseif (rectangle5.addEventListener('mouseover', rectangle2Off)) {
-        //     perso.classList.add('perso-win2');
-        //     console.log('rectangle5 is on');
-        // }
+
+
+
 rectangle2.addEventListener('mouseover', function () {
     perso.classList.add('perso-win1');
     perso.classList.remove('perso-loose1');
@@ -24,6 +20,20 @@ rectangle2.addEventListener('mouseout', function () {
     perso.classList.add('perso-loose1');
     console.log('rectangle2 is off');
 } );
+
+rectangle3.addEventListener('mouseover', function () {
+    perso.classList.add('perso-win2');
+    perso.classList.remove('perso-loose2');
+    perso.classList.remove('perso-loose1');
+    console.log('rectangle3 is on');
+} );
+rectangle3.addEventListener('mouseout', function () {
+    perso.classList.remove('perso-win2');
+    perso.classList.remove('perso-win1');
+    perso.classList.add('perso-loose2');
+    console.log('rectangle3 is off');
+} );
+
 
 function rectangle2on () {
     rectangle2.style.backgroundColor = 'rgb(203, 172, 113)';

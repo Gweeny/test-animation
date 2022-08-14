@@ -48,6 +48,15 @@ h1{
     animation: perso-move1 3000ms;
     animation-fill-mode: forwards;
 }
+.perso-win2{
+    width: 31px;
+    position: absolute;
+    top: 174px;
+    left: 31px;
+    border: 1px solid blue;
+    animation: perso-move3 3000ms;
+    animation-fill-mode: forwards;
+}
 .perso-loose1{
     width: 31px;
     position: absolute;
@@ -55,6 +64,15 @@ h1{
     left: 31px;
     border: 1px solid blue;
     animation: perso-move2 3000ms;
+    animation-fill-mode: forwards;
+}
+.perso-loose2{
+    width: 31px;
+    position: absolute;
+    top: 174px;
+    left: 31px;
+    border: 1px solid blue;
+    animation: perso-move4 3000ms;
     animation-fill-mode: forwards;
 }
 @keyframes perso-move1{
@@ -97,6 +115,45 @@ h1{
         transform: translate(318px, 528px);
     }
 
+}
+
+
+@keyframes perso-move3{
+    0%{
+        transform: translate(318px, 153px);
+    }
+    40%{
+        transform: translate(380px, 153px);
+    }
+    55%{
+        transform: translate(480px, 50px);
+    }
+    60%{
+        transform: translate(480px, 55px);
+    }
+    95%{
+        transform: translate(490px, 302px);
+    }
+    100%{
+        transform: translate(490px, 304px);
+    }
+}
+@keyframes perso-move4{
+    0%{
+        transform: translate(318px, 153px);
+    }
+    40%{
+        transform: translate(380px, 153px);
+    }
+    55%{
+        transform: translate(480px, 50px);
+    }
+    65%{
+        transform: translate(480px, 55px);
+    }
+    100%{
+        transform: translate(490px, 528px);
+    }
 }
 .rectangles{
     display: flex;
