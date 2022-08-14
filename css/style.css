@@ -33,11 +33,70 @@ h1{
     align-items: flex-end;
 }
 #perso{
-    width: 30px;
+    width: 31px;
     position: absolute;
-    top: 177px;
-    left: 2%;
-    
+    top: 174px;
+    left: 31px;
+    border: 1px solid blue;
+}
+.perso-win1{
+    width: 31px;
+    position: absolute;
+    top: 174px;
+    left: 31px;
+    border: 1px solid blue;
+    animation: perso-move1 3000ms;
+    animation-fill-mode: forwards;
+}
+.perso-loose1{
+    width: 31px;
+    position: absolute;
+    top: 174px;
+    left: 31px;
+    border: 1px solid blue;
+    animation: perso-move2 3000ms;
+    animation-fill-mode: forwards;
+}
+@keyframes perso-move1{
+    0%{
+        transform: translate(0px, 0px);
+    }
+    40%{
+        transform: translate(144px, 0px);
+    }
+    55%{
+        transform: translate(245px, -81px);
+    }
+    60%{
+        transform: translate(245px, -80px);
+    }
+    95%{
+        transform: translate(318px, 152px);
+    }
+    100%{
+        transform: translate(318px, 153px);
+    }
+}
+@keyframes perso-move2{    
+    0%{
+    transform: translate(0px, 0px);
+    }
+    40%{
+        transform: translate(144px, 0px);
+    }
+    55%{
+        transform: translate(245px, -81px);
+    }
+    60%{
+        transform: translate(245px, -80px);
+    }
+    /* 95%{
+        transform: translate(318px, 148px);
+    } */
+    100%{
+        transform: translate(318px, 528px);
+    }
+
 }
 .rectangles{
     display: flex;
@@ -97,4 +156,30 @@ hr{
     position: absolute;
     bottom: 5px;
     left: 95%;
+}
+
+
+.tests{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    color: rgb(49, 255, 131);
+}
+#test1{
+    top: 174px;
+    left: 31px;
+}
+#test2{
+    top: 174px;
+    left: 175px;
+}
+#test3{
+    top: 125px;
+    left: 250px;
+    transform: translate(25px, 0px);
+}
+#test4{
+    top: 354px;
+    left: 350px;
 }
