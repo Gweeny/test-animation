@@ -38,8 +38,8 @@ h1{
     top: 174px;
     left: 31px;
     border: 1px solid blue;
-    /* animation: perso-move7 3000ms;
-    animation-fill-mode: forwards; */
+    animation: perso-winGame 3000ms;
+    animation-fill-mode: forwards;
 }
 
 
@@ -80,7 +80,15 @@ h1{
     animation: perso-move7 3000ms;
     animation-fill-mode: forwards;
 }
-
+.perso-win5{
+    width: 31px;
+    position: absolute;
+    top: 174px;
+    left: 31px;
+    border: 1px solid blue;
+    animation: perso-move9 3000ms;
+    animation-fill-mode: forwards;
+}
 
 .perso-loose1{
     width: 31px;
@@ -119,7 +127,15 @@ h1{
     animation: perso-move8 3000ms;
     animation-fill-mode: forwards;
 }
-
+.perso-loose5{
+    width: 31px;
+    position: absolute;
+    top: 174px;
+    left: 31px;
+    border: 1px solid blue;
+    animation: perso-move10 3000ms;
+    animation-fill-mode: forwards;
+}
 
 
 @keyframes perso-move1{
@@ -256,10 +272,10 @@ h1{
         transform: translate(1070px, 535px);
     }
     55% {
-        transform: translate(1150px, 350px);
+        transform: translate(1150px, 400px);
     }
     60% {
-        transform: translate(1150px, 350px);
+        transform: translate(1150px, 400px);
     }
     95% {
         transform: translate(1200px, 625px);
@@ -283,11 +299,75 @@ h1{
         transform: translate(1150px, 350px);
     }
     95% {
-        transform: translate(1200px, 625px);
+        transform: translate(1200px, 675px);
     }
     100% {
         transform: translate(1200px, 675px);
     }
+}
+
+@keyframes perso-move9 {
+    0% {
+        transform: translate(1200px, 625px);
+    }
+    40% {
+        transform: translate(1350px, 625px);
+    }
+    55% {
+        transform: translate(1450px, 550px);
+    }
+    60% {
+        transform: translate(1450px, 550px);
+    }
+    95% {
+        transform: translate(1500px, 665px);
+    }
+    100% {
+        transform: translate(1500px, 665px);
+    }
+    
+}
+@keyframes perso-move10 {
+    0% {
+        transform: translate(1200px, 625px);
+    }
+    40% {
+        transform: translate(1350px, 625px);
+    }
+    55% {
+        transform: translate(1450px, 500px);
+    }
+    60% {
+        transform: translate(1450px, 500px);
+    }
+    95% {
+        transform: translate(1500px, 675px);
+    }
+    100% {
+        transform: translate(1500px, 675px);
+    }
+}
+
+@keyframes perso-winGame {
+    0% {
+        transform: translate(1500px, 665px);
+    }
+    40% {
+        transform: translate(1600px, 665px);
+    }
+    55% {
+        transform: translate(1700px, 650px);
+    }
+    60% {
+        transform: translate(1700px, 675s);
+    }
+    80% {
+        transform: translate(1700px, 675px);
+    }
+    100% {
+        transform: translate(1810px, 675px);
+    }
+    
 }
 
 .rectangles{
@@ -341,12 +421,20 @@ h1{
 }
 
 hr{
-    height: 7vh;
+    height: 50px;
     width: 2px;
     border: none;
     background-color: wheat;
     position: absolute;
-    bottom: 5px;
+    bottom: 30px;
+    left: 95%;
+}
+#star{
+    height: 50px;
+    width: 50px;
+    color: rgb(203, 172, 113);
+    position: absolute;
+    bottom: 36px;
     left: 95%;
 }
 

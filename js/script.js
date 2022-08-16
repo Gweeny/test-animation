@@ -65,8 +65,18 @@ rectangle5.addEventListener('mouseout', function () {
     console.log('rectangle5 is off');
 } );
 
-
-
+rectangle6.addEventListener('mouseover', function () {
+    perso.classList.add('perso-win5');
+    perso.classList.remove('perso-loose5');
+    perso.classList.remove('perso-loose4');
+    console.log('rectangle6 is on');
+} );
+rectangle6.addEventListener('mouseout', function () {
+    perso.classList.remove('perso-win5');
+    perso.classList.remove('perso-win4');
+    perso.classList.add('perso-loose5');
+    console.log('rectangle6 is off');
+} );
 
 
 
