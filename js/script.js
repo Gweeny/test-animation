@@ -15,13 +15,13 @@ rectangle2.addEventListener('mouseover', function () {
     setTimeout(() => {
         perso.classList.remove('perso-loose1');
     }, 1000); 
-    console.log('rectangle2 is on');    
+    console.log('rectangle2 is on');
 } );
 rectangle2.addEventListener('mouseout', function () {
     setTimeout(() => {
         perso.classList.remove('perso-win1');
     }, 100000); 
-    perso.classList.add('perso-loose1');
+    perso.classList.add('perso-loose1');    
     console.log('rectangle2 is off');
 } );
 
@@ -78,7 +78,7 @@ rectangle6.addEventListener('mouseout', function () {
     console.log('rectangle6 is off');
 } );
 
-
+// si le rectange6 est selectionné une fois alors perso.classList.add('perso-winGame');
 
 function rectangle2on () {
     rectangle2.style.backgroundColor = 'rgb(203, 172, 113)';
