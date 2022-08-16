@@ -38,7 +38,11 @@ h1{
     top: 174px;
     left: 31px;
     border: 1px solid blue;
+    /* animation: perso-move7 3000ms;
+    animation-fill-mode: forwards; */
 }
+
+
 .perso-win1{
     width: 31px;
     position: absolute;
@@ -57,6 +61,27 @@ h1{
     animation: perso-move3 3000ms;
     animation-fill-mode: forwards;
 }
+.perso-win3{
+    width: 31px;
+    position: absolute;
+    top: 174px;
+    left: 31px;
+    border: 1px solid blue;
+    animation: perso-move5 3000ms;
+    animation-fill-mode: forwards;
+}
+
+.perso-win4{
+    width: 31px;
+    position: absolute;
+    top: 174px;
+    left: 31px;
+    border: 1px solid blue;
+    animation: perso-move7 3000ms;
+    animation-fill-mode: forwards;
+}
+
+
 .perso-loose1{
     width: 31px;
     position: absolute;
@@ -75,6 +100,28 @@ h1{
     animation: perso-move4 3000ms;
     animation-fill-mode: forwards;
 }
+.perso-loose3{
+    width: 31px;
+    position: absolute;
+    top: 174px;
+    left: 31px;
+    border: 1px solid blue;
+    animation: perso-move6 3000ms;
+    animation-fill-mode: forwards;
+}
+
+.perso-loose4{
+    width: 31px;
+    position: absolute;
+    top: 174px;
+    left: 31px;
+    border: 1px solid blue;
+    animation: perso-move8 3000ms;
+    animation-fill-mode: forwards;
+}
+
+
+
 @keyframes perso-move1{
     0%{
         transform: translate(0px, 0px);
@@ -92,7 +139,7 @@ h1{
         transform: translate(318px, 152px);
     }
     100%{
-        transform: translate(318px, 153px);
+        transform: translate(318px, 152px);
     }
 }
 @keyframes perso-move2{    
@@ -112,7 +159,7 @@ h1{
         transform: translate(318px, 148px);
     } */
     100%{
-        transform: translate(318px, 528px);
+        transform: translate(318px, 675px);
     }
 
 }
@@ -123,19 +170,19 @@ h1{
         transform: translate(318px, 153px);
     }
     40%{
-        transform: translate(380px, 153px);
+        transform: translate(500px, 153px);
     }
     55%{
-        transform: translate(480px, 50px);
+        transform: translate(560px, 50px);
     }
     60%{
-        transform: translate(480px, 55px);
+        transform: translate(560px, 55px);
     }
     95%{
-        transform: translate(490px, 302px);
+        transform: translate(650px, 324px);
     }
     100%{
-        transform: translate(490px, 304px);
+        transform: translate(650px, 324px);
     }
 }
 @keyframes perso-move4{
@@ -143,18 +190,106 @@ h1{
         transform: translate(318px, 153px);
     }
     40%{
-        transform: translate(380px, 153px);
+        transform: translate(500px, 153px);
     }
     55%{
-        transform: translate(480px, 50px);
+        transform: translate(560px, 50px);
     }
-    65%{
-        transform: translate(480px, 55px);
+    60%{
+        transform: translate(560px, 55px);
+    }
+    95%{
+        transform: translate(650px, 670px);
     }
     100%{
-        transform: translate(490px, 528px);
+        transform: translate(650px, 675px);
     }
 }
+@keyframes perso-move5 {
+    0% {
+        transform: translate(650px, 324px);
+    }
+    40% {
+        transform: translate(780px, 324px);
+    }
+    55% {
+        transform: translate(880px, 180px);
+    }
+    60% {
+        transform: translate(880px, 180px);
+    }
+    95% {
+        transform: translate(880px, 535px);
+    }
+    100% {
+        transform: translate(880px, 535px);
+    }
+    
+}
+
+@keyframes perso-move6 {
+    0% {
+        transform: translate(650px, 324px);
+    }
+    40% {
+        transform: translate(780px, 324px);
+    }
+    55% {
+        transform: translate(880px, 180px);
+    }
+    60% {
+        transform: translate(880px, 180px);
+    }
+    95% {
+        transform: translate(880px, 675px);
+    }
+    100% {
+        transform: translate(880px, 675px);
+    }
+}
+
+@keyframes perso-move7 {
+    0% {
+        transform: translate(880px, 535px);
+    }
+    40% {
+        transform: translate(1070px, 535px);
+    }
+    55% {
+        transform: translate(1150px, 350px);
+    }
+    60% {
+        transform: translate(1150px, 350px);
+    }
+    95% {
+        transform: translate(1200px, 625px);
+    }
+    100% {
+        transform: translate(1200px, 625px);
+    }
+}
+
+@keyframes perso-move8 {
+    0% {
+        transform: translate(880px, 535px);
+    }
+    40% {
+        transform: translate(1070px, 535px);
+    }
+    55% {
+        transform: translate(1150px, 350px);
+    }
+    60% {
+        transform: translate(1150px, 350px);
+    }
+    95% {
+        transform: translate(1200px, 625px);
+    }
+    100% {
+        transform: translate(1200px, 675px);
+    }
+}
+
 .rectangles{
     display: flex;
     justify-content: space-around;
@@ -163,8 +298,8 @@ h1{
     width: 90vw;
 }
 .rectangle{
-    width: 12vw;
-    height: 70vh;
+    width: 260px;
+    height: 675px;
     justify-content: space-around;
 
 }
@@ -174,13 +309,13 @@ h1{
 }
 
 #rectangle2{
-    height: 50vh;
+    height: 524px;
     background-color: none;
     border: 1px dotted black;
 }
 
 #rectangle3{
-    height: 30vh;
+    height: 350px;
     background-color: none;
     border: 1px dotted black;
 }
